@@ -33,12 +33,10 @@ public class Pickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collision detected with: " + other.gameObject.name);
         if (other.CompareTag("Player"))
         {
-           score++;
-
-           scoreText.text = "Score: " + score;
+            score++;
+            scoreText.text = "Score: " + score;
 
             Destroy(gameObject);
 
@@ -60,5 +58,8 @@ public class Pickup : MonoBehaviour
         {
             statsText.text = "Time is Up!\nItems collected: " + score;
         }
+
+        // Hide the Stats text
+        statsText.gameObject.SetActive(true);
     }
 }
