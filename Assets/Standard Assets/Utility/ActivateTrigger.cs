@@ -10,16 +10,16 @@ namespace UnityStandardAssets.Utility
         // a trigger collider is entered.
         public enum Mode
         {
-            Trigger = 0,    // Just broadcast the action on to the target
-            Replace = 1,    // replace target with source
-            Activate = 2,   // Activate the target GameObject
-            Enable = 3,     // Enable a component
-            Animate = 4,    // Start animation on target
-            Deactivate = 5  // Decativate target GameObject
+            Trigger = 0,    
+            Replace = 1,    
+            Activate = 2,  
+            Enable = 3,     
+            Animate = 4,    
+            Deactivate = 5 
         }
 
-        public Mode action = Mode.Activate;         // The action to accomplish
-        public Object target;                       // The game object to affect. If none, the trigger work on this game object
+        public Mode action = Mode.Activate;         
+        public Object target;                      
         public GameObject source;
         public int triggerCount = 1;
         public bool repeatTrigger = false;

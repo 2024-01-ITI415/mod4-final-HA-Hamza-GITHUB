@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -254,6 +254,10 @@ PrefabInstance:
       value: PickUp (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
       value: 175.92
       objectReference: {fileID: 0}
@@ -263,7 +267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 44.7
+      value: 44.699997
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalRotation.w
@@ -296,32 +300,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 133971692}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
---- !u!1 &133971691 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 133971690}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &133971692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133971691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1 &158141042
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +327,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158141042}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &158141044
 Camera:
   m_ObjectHideFlags: 0
@@ -574,6 +554,10 @@ PrefabInstance:
       value: PickUp (5)
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
       value: 180.18
       objectReference: {fileID: 0}
@@ -616,32 +600,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 250346470}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
---- !u!1 &250346469 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 250346468}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &250346470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250346469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1 &265194537
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,6 +655,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 100, z: 500}
   m_Center: {x: 500, y: 100, z: 250}
+--- !u!1 &342618659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  m_PrefabInstance: {fileID: 1227825872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &342618671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342618659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  totalPickups: 10
+  scoreText: {fileID: 1094639203}
+  statsText: {fileID: 1987665491}
+  timerText: {fileID: 233965769}
+--- !u!1 &489640635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 489640636}
+  m_Layer: 0
+  m_Name: PickupController
+  m_TagString: PickUp
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &489640636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489640635}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 180.76, y: 50.882298, z: 134.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &603087479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -706,6 +719,10 @@ PrefabInstance:
     - target: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_Name
       value: PickUp (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
@@ -750,32 +767,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 603087481}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
---- !u!1 &603087480 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 603087479}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &603087481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603087480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1 &670240546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,27 +1063,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &883692570 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 1069492828516847438}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &883692576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883692570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1 &914742516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1236,10 @@ PrefabInstance:
       value: PickUp (8)
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
       value: 176.04
       objectReference: {fileID: 0}
@@ -1306,32 +1282,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1065017018}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
---- !u!1 &1065017017 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 1065017016}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1065017018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1065017017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1 &1066220357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,7 +1479,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 342618671}
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!1001 &1452921130
 PrefabInstance:
@@ -1540,6 +1495,10 @@ PrefabInstance:
     - target: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_Name
       value: PickUp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1584,32 +1543,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1452921132}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
---- !u!1 &1452921131 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 1452921130}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1452921132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452921131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1 &1470062237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,6 +1611,10 @@ PrefabInstance:
       value: PickUp (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
       value: 183.14
       objectReference: {fileID: 0}
@@ -1718,32 +1657,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1474055365}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
---- !u!1 &1474055364 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 1474055363}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1474055365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474055364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1001 &1550228066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1755,6 +1670,10 @@ PrefabInstance:
     - target: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_Name
       value: PickUp (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1799,32 +1718,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1550228068}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
---- !u!1 &1550228067 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 1550228066}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1550228068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550228067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1001 &1723259098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1836,6 +1731,10 @@ PrefabInstance:
     - target: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_Name
       value: PickUp (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1880,32 +1779,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1723259100}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
---- !u!1 &1723259099 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 1723259098}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1723259100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723259099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1001 &1737321375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1917,6 +1792,10 @@ PrefabInstance:
     - target: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_Name
       value: PickUp (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1961,32 +1840,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1737321377}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
---- !u!1 &1737321376 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-  m_PrefabInstance: {fileID: 1737321375}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1737321377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737321376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404b58e81dd30d642881530f015ebb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1094639203}
-  statsText: {fileID: 1987665491}
-  timerText: {fileID: 233965769}
 --- !u!1 &1987665489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,6 +2062,10 @@ PrefabInstance:
       value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.x
       value: 167.293
       objectReference: {fileID: 0}
@@ -2216,7 +2075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.992
+      value: 28.992004
       objectReference: {fileID: 0}
     - target: {fileID: 8699408316640397539, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2249,10 +2108,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5205245867863276921, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 883692576}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178e44e80b1aaa94998e7bc8fca26c38, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -2275,6 +2131,7 @@ SceneRoots:
   - {fileID: 603087479}
   - {fileID: 1065017016}
   - {fileID: 1550228066}
+  - {fileID: 489640636}
   - {fileID: 914742519}
   - {fileID: 1996083069}
   - {fileID: 231360857}
