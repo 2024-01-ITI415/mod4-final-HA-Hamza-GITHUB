@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Labs/07-Prototype3/07-Prototype3.unity
     guid: a0d2a73e11b0743f4abfb05dbe92329b
+  - enabled: 1
+    path: Assets/_Labs/08-Final/08-Final.unity
+    guid: 1d8699f957707e4428fa5e00f584c0e7
   m_configObjects: {}
